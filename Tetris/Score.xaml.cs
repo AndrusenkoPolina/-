@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Tetris
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Score.xaml
     /// </summary>
-    public partial class MainView : Window
+    public partial class Score : Window
     {
-        public MainView()
+        public Score()
         {
             InitializeComponent();
         }
