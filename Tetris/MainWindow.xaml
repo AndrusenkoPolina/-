@@ -38,7 +38,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock  Grid.Row="0"  Grid.Column="1" Background="{StaticResource ScreenBrush}" >
             </TextBlock>
-        <Button  Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}" Content="Начать игру" Grid.Row="1"  Grid.Column="1">
+        <Button  Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}" Content="Начать игру" Grid.Row="1"  Grid.Column="1" FontFamily="Segoe Print">
             </Button>
         <Button  Grid.Row="2"  Grid.Column="1" Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}" Content="Рекорды" FontFamily="Segoe Print">
             </Button>

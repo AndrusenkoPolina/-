@@ -24,7 +24,7 @@
             </RowDefinition>
         </Grid.RowDefinitions>
         
-        <TextBlock Grid.Row="0" Style="{StaticResource StyleTextBlockMain}" Text="Таблица рекордов" />
+        <TextBlock Grid.Row="0" Style="{StaticResource StyleGradient}" Text="Таблица рекордов" />
 
         <Grid Grid.Row="1" >
             <Grid.ColumnDefinitions>
@@ -37,7 +37,7 @@
                 <RowDefinition Height="30" />
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Column="0" Style="{StaticResource StyleTextBlockChild}" Text="Место" />
+            <TextBlock Grid.Column="0" Style="{StaticResource StyleTextBlockChild}" Text="Место"  />
             <TextBlock  Grid.Column="1" Style="{StaticResource StyleTextBlockChild}" Text="Имя"/>
             <TextBlock  Grid.Column="2" Style="{StaticResource StyleTextBlockChild}" Text="Очки"/>
         </Grid>

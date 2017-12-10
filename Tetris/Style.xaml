@@ -38,6 +38,17 @@
 
     </Style>
 
+    <Style x:Key="StyleGradient" TargetType="TextBlock" BasedOn="{StaticResource StyleTextBlockMain}" >
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0.5" Color="LightBlue"/>
+                    <GradientStop Offset="1" Color="White"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <Style x:Key="StyleButtonChild" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
         <Setter Property="FontSize" Value="10"/>
     </Style>
@@ -45,6 +56,24 @@
     <Style x:Key="StyleTextBlockChild" TargetType="TextBlock"  BasedOn="{StaticResource StyleTextBlockMain}">
         <Setter Property="FontSize" Value="15">
         </Setter>
+    </Style>
+
+    <Style x:Key="StyleLabel" TargetType="Label">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="FontFamily" Value="Segoe Print"/>
+        <Setter Property="Background" Value="LightBlue"/>
+        <Setter Property="Width" Value="160"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+    </Style>
+
+    <Style x:Key="StyleTextBox" TargetType="TextBox">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="BorderBrush" Value="LightBlue"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="Margin" Value="5"/>
     </Style>
 
     <ControlTemplate x:Key="TemplateButton" TargetType="Button">
