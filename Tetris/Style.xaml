@@ -9,10 +9,10 @@
         <Setter Property="Margin" Value="5">
         </Setter>
 
-        <Setter Property="FontSize" Value="20">
+        <Setter Property="FontSize" Value="30">
         </Setter>
 
-        <Setter Property="FontFamily" Value="Segoe Print">
+        <Setter Property="FontFamily" Value="/Tetris;component/#Bebas Neue Bold">
         </Setter>
 
     </Style>
@@ -27,10 +27,10 @@
         <Setter Property="Foreground" Value="Black">
         </Setter>
 
-        <Setter Property="FontSize" Value="20">
+        <Setter Property="FontSize" Value="30">
         </Setter>
 
-        <Setter Property="FontFamily" Value="Segoe Print">
+        <Setter Property="FontFamily" Value="/Tetris;component/#Bebas Neue Bold">
         </Setter>
 
         <Setter Property="TextAlignment" Value="Center"/>
@@ -62,7 +62,7 @@
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="FontSize" Value="13"/>
-        <Setter Property="FontFamily" Value="Segoe Print"/>
+        <Setter Property="FontFamily" Value="/Tetris;component/#Bebas Neue Bold"/>
         <Setter Property="Background" Value="LightBlue"/>
         <Setter Property="Width" Value="160"/>
         <Setter Property="BorderThickness" Value="1"/>
