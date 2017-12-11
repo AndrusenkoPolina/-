@@ -14,6 +14,7 @@
 
         <Setter Property="FontFamily" Value="/Tetris;component/#Bebas Neue Bold">
         </Setter>
+        <Setter Property="Foreground" Value="#4E504E"/>
 
     </Style>
 
@@ -38,7 +39,7 @@
 
     </Style>
 
-    <Style x:Key="StyleGradient" TargetType="TextBlock" BasedOn="{StaticResource StyleTextBlockMain}" >
+    <Style x:Key="StyleTextblockGradientMain" TargetType="TextBlock" BasedOn="{StaticResource StyleTextBlockMain}" >
         <Setter Property="Background">
             <Setter.Value>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
@@ -47,6 +48,10 @@
                 </LinearGradientBrush>
             </Setter.Value>
         </Setter>
+    </Style>
+
+    <Style x:Key="StyleTextblockGradientChild" TargetType="TextBlock" BasedOn="{StaticResource StyleTextblockGradientMain}">
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style x:Key="StyleButtonChild" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
@@ -64,9 +69,10 @@
         <Setter Property="FontSize" Value="13"/>
         <Setter Property="FontFamily" Value="/Tetris;component/#Bebas Neue Bold"/>
         <Setter Property="Background" Value="LightBlue"/>
-        <Setter Property="Width" Value="160"/>
+        <Setter Property="Width" Value="100"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="BorderBrush" Value="#4E504E"/>
+        <Setter Property="Foreground" Value="#4E504E"/>
     </Style>
 
     <Style x:Key="StyleTextBox" TargetType="TextBox">

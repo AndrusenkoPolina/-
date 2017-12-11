@@ -22,13 +22,11 @@
             </ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1"  >
-            <TextBlock Grid.Row="1" Style="{StaticResource StyleGradient}">
-            </TextBlock>
-
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1" Style="{StaticResource StyleTextblockGradientMain}"/>
             <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>

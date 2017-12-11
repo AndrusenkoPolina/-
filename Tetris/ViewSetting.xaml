@@ -17,12 +17,26 @@
     <Grid Background="{StaticResource MainPictureBrush}">
         <Grid.RowDefinitions>
             <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition Height="5*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Style="{StaticResource StyleGradient}" Text="Настройки" >
+        <TextBlock Grid.Row="0" Style="{StaticResource StyleTextblockGradientMain}" Text="Настройки" >
         </TextBlock>
-        <Grid Grid.Row="2">
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -32,30 +46,38 @@
             </Button>
             
         </Grid>
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="2">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="0.1*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Перемещение вниз"/>
-            <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
-            <Label Grid.Row="3" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Перемещение влево"/>
-            <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
-            <Label Grid.Row="4" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Перемещение вправо"/>
-            <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
-            <Label Grid.Row="5" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Поворот"/>
-            <TextBox Grid.Row="5" Grid.Column="1 " Style="{StaticResource StyleTextBox}"/>
-            <Label Grid.Row="6" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Пауза"/>
-            <TextBox Grid.Row="6" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
+
+            <TextBlock Grid.Row="0" Style="{StaticResource StyleTextblockGradientChild}" Text="Управление" FontSize="20" >
+            </TextBlock>
+            
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Перемещение вниз"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
+                <Label Grid.Row="1" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Перемещение влево"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
+                <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Перемещение вправо"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
+                <Label Grid.Row="3" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Поворот"/>
+                <TextBox Grid.Row="3" Grid.Column="1 " Style="{StaticResource StyleTextBox}"/>
+                <Label Grid.Row="4" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Пауза"/>
+                <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
