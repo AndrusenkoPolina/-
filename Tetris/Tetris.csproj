@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameOver.xaml.cs">
+      <DependentUpon>GameOver.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewPause.xaml.cs">
       <DependentUpon>ViewPause.xaml</DependentUpon>
     </Compile>
@@ -67,6 +70,10 @@
     <Compile Include="ViewSetting.xaml.cs">
       <DependentUpon>ViewSetting.xaml</DependentUpon>
     </Compile>
+    <Page Include="GameOver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

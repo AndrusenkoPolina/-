@@ -26,7 +26,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="1" Style="{StaticResource StyleTextblockGradientMain}"/>
+            <TextBlock Grid.Row="1" Style="{StaticResource StyleTextblockGradientChild}"/>
             <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>

@@ -1,11 +1,11 @@
-﻿<Window x:Class="Tetris.ViewPause"
+﻿<Window x:Class="Tetris.GameOver"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tetris"
         mc:Ignorable="d"
-        Title="ViewPause" Height="600" Width="400">
+        Title="Игра окончена" Height="600" Width="400">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -14,7 +14,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    <Grid  Opacity="0.8">
+    <Grid Opacity="0.9">
         <Grid.ColumnDefinitions >
             <ColumnDefinition>
             </ColumnDefinition>
@@ -30,20 +30,24 @@
         </Grid.RowDefinitions>
         <Grid  Grid.Column="1" Grid.Row="1" Background="LightBlue" >
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*"/>
+                <RowDefinition />
+                <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Style="{StaticResource StyleTextBlockMain}" VerticalAlignment="Center" Text="Пауза "/>
-            <Grid Grid.Row="1" >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Style="{StaticResource StyleButtonChild}" Template="{StaticResource TemplateButton}" Content="Продолжить"/>
-                <Button Grid.Column="1" Style="{StaticResource StyleButtonChild}" Template="{StaticResource TemplateButton}" Content="Выйти"/>
+            <TextBlock Grid.Row="0" Style="{StaticResource StyleTextBlockMain}" VerticalAlignment="Center" Text="Игра окончена"/>
+            <TextBlock Grid.Row="1" Style="{StaticResource StyleTextBlockMain}" >
+            </TextBlock>
+            <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="1" Style="{StaticResource StyleButtonChild}" Template="{StaticResource TemplateButton}" Content="Выйти">
+                    </Button>
+                </Grid>
+
             </Grid>
-        </Grid>
-        
-        
+
     </Grid>
 </Window>

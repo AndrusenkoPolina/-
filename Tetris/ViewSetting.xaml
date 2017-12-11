@@ -21,30 +21,26 @@
             <RowDefinition Height="5*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Style="{StaticResource StyleTextblockGradientMain}" Text="Настройки" >
+        <TextBlock Grid.Row="0" Style="{StaticResource StyleTextBlockMain}" Text="Настройки" >
         </TextBlock>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition />
             </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Style="{StaticResource StyleTextblockGradientChild}" Text="Звук">
+            </TextBlock>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Громкость">
+                </Label>
+                <Slider Grid.Column="1"  VerticalAlignment="Center" >
+                </Slider>
             </Grid>
 
-        </Grid>
-        <Grid Grid.Row="3">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Button Grid.Column="1" Grid.Row="2" Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}" Content="Назад">
-            </Button>
-            
         </Grid>
         <Grid Grid.Row="2">
             <Grid.RowDefinitions>
@@ -78,6 +74,15 @@
                 <Label Grid.Row="4" Grid.Column="0" Style="{StaticResource StyleLabel}" Content="Пауза"/>
                 <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource StyleTextBox}"/>
             </Grid>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1" Grid.Row="2" Style="{StaticResource StyleButtonChild}" Template="{StaticResource TemplateButton}" Content="Назад">
+            </Button>
         </Grid>
     </Grid>
 </Window>
