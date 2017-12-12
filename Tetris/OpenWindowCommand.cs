@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace Tetris
@@ -25,31 +26,34 @@ namespace Tetris
             if (String.IsNullOrWhiteSpace(vmOpen))
                 throw new ArgumentNullException("Данные о окне не могут быть пустыми!");
 
-
-            if (vmOpen == "Game")
+            switch (vmOpen)
             {
-                ViewGame windowopen = new ViewGame();
-                MainView windclose = new MainView();
-                windowopen.Show();
-                windclose.Close();
-            }
+                case "Game":
+                    vgame.Show();
+                    break;
+                case "Score" :
+                    ViewScore vscore = new ViewScore();
+                    vscore.Show();
+                    break;
+                case "Setting":
+                    ViewSetting vsettings = new ViewSetting();
+                    vsettings.Show();
+                    break;
+                case "Exit":
+                    break;
+                case "BackMain":
+                    MainView vmain = new MainView();
+                    vmain.Show();
+                    break;
+                default:
+                    throw new ArgumentException("Недопустимый параметр для команды");
 
-            if (vmOpen == "Score")
-            {
-                ViewScore windowopen = new ViewScore();
-                windowopen.Show();
             }
+        
+            var window = Application.Current.Windows[0];
+            if (window != null)
+                window.Close();
 
-            if (vmOpen == "Setting")
-            {
-                ViewSetting windowopen = new ViewSetting();
-                windowopen.Show();
-            }
-            if (vmOpen == "Q")
-            {
-
-            }
-    
         }
 
 

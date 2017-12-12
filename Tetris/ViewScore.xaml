@@ -14,6 +14,9 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
+    <Window.DataContext>
+        <local:ViewModelMainWindow></local:ViewModelMainWindow>
+    </Window.DataContext>
     <Grid Background="{StaticResource MainPictureBrush}">
         <Grid.RowDefinitions>
             <RowDefinition  Height="50">
@@ -42,7 +45,9 @@
             <TextBlock  Grid.Column="2" Style="{StaticResource  StyleTextblockGradientChild}" Text="Очки"/>
         </Grid>
         
-        <Button Grid.Row="2" Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}" 
+        <Button Grid.Row="2" Style="{StaticResource ButtonStyle}" 
+                Template="{StaticResource TemplateButton}" 
+                Command="{Binding Open}" CommandParameter="BackMain"
                 Content="Назад" Width="150" Height="70" >
         </Button>
     </Grid>

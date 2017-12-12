@@ -65,7 +65,7 @@
         <Button Grid.Row="4"  Grid.Column="1" 
                 Style="{StaticResource ButtonStyle}" 
                 Template="{StaticResource TemplateButton}" 
-                Command="{Binding Open}" CommandParameter="Quite"
+                Command="{Binding Open}" CommandParameter="Exit"
                 Content="Выход"  >
         </Button>
        
