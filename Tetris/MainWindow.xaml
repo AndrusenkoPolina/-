@@ -14,6 +14,9 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
+    <Window.DataContext>
+        <local:ViewModelMainWindow></local:ViewModelMainWindow>
+    </Window.DataContext>
     <Grid  Background="{StaticResource MainPictureBrush}" >
 
         <Grid.RowDefinitions>
@@ -36,16 +39,34 @@
             <ColumnDefinition>
             </ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock  Grid.Row="0"  Grid.Column="1" Background="{StaticResource ScreenBrush}" >
+        <TextBlock  Grid.Row="0"  Grid.Column="1" 
+                    Background="{StaticResource ScreenBrush}" >
             </TextBlock>
-        <Button  Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}" Content="Начать игру" Grid.Row="1"  Grid.Column="1" >
+        
+        <Button  Style="{StaticResource ButtonStyle}"
+                 Template="{StaticResource TemplateButton}" 
+                 Command="{Binding Open}" CommandParameter="Game"
+                 Content="Начать игру" Grid.Row="1"  Grid.Column="1" >
             </Button>
-        <Button  Grid.Row="2"  Grid.Column="1" Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}" Content="Рекорды">
+        
+        <Button  Grid.Row="2"  Grid.Column="1" 
+                 Style="{StaticResource ButtonStyle}"
+                 Template="{StaticResource TemplateButton}" 
+                 Command="{Binding Open}" CommandParameter="Score"
+                 Content="Рекорды">
             </Button>
-        <Button Grid.Row="3"  Grid.Column="1" Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}" Content="Настройки">
+        <Button Grid.Row="3"  Grid.Column="1"
+                Style="{StaticResource ButtonStyle}" 
+                Template="{StaticResource TemplateButton}"
+                Command="{Binding Open}" CommandParameter="Setting"
+                Content="Настройки">
             </Button>
-        <Button Grid.Row="4"  Grid.Column="1" Style="{StaticResource ButtonStyle}" Template="{StaticResource TemplateButton}"  Content="Выход"  >
-          
+
+        <Button Grid.Row="4"  Grid.Column="1" 
+                Style="{StaticResource ButtonStyle}" 
+                Template="{StaticResource TemplateButton}" 
+                Command="{Binding Open}" CommandParameter="Quite"
+                Content="Выход"  >
         </Button>
        
     </Grid>

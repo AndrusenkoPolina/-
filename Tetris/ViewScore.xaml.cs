@@ -17,9 +17,9 @@ namespace Tetris
     /// <summary>
     /// Логика взаимодействия для Score.xaml
     /// </summary>
-    public partial class ScoreView : Window
+    public partial class ViewScore: Window
     {
-        public ScoreView()
+        public ViewScore()
         {
             InitializeComponent();
         }

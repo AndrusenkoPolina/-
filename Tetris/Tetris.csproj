@@ -55,9 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="OpenWindowCommand.cs" />
     <Compile Include="GameOver.xaml.cs">
       <DependentUpon>GameOver.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModelMainWindow.cs" />
     <Compile Include="ViewPause.xaml.cs">
       <DependentUpon>ViewPause.xaml</DependentUpon>
     </Compile>
