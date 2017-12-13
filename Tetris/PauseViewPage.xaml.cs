@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace Tetris
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PauseViewPage.xaml
     /// </summary>
-    public partial class MainView : Window
+    public partial class PauseViewPage : Page
     {
-        public MainView()
+        public PauseViewPage()
         {
             InitializeComponent();
-            MainPageView mpv = new MainPageView();
-            Main.NavigationService.Navigate(mpv);
-
         }
-
-       
-       
     }
 }

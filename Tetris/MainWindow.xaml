@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tetris"
         mc:Ignorable="d"
-        Title="Меню" Height="600" Width="400">
+        Title="Запуск" >
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -14,60 +14,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    <Window.DataContext>
-        <local:ViewModelMainWindow></local:ViewModelMainWindow>
-    </Window.DataContext>
     <Grid  Background="{StaticResource MainPictureBrush}" >
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="3*">
-            </RowDefinition>
-            <RowDefinition>
-            </RowDefinition>
-            <RowDefinition>
-            </RowDefinition>
-            <RowDefinition>
-            </RowDefinition>
-            <RowDefinition>
-            </RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition>
-            </ColumnDefinition>
-            <ColumnDefinition Width="250">
-            </ColumnDefinition>
-            <ColumnDefinition>
-            </ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <TextBlock  Grid.Row="0"  Grid.Column="1" 
-                    Background="{StaticResource ScreenBrush}" >
-            </TextBlock>
-        
-        <Button  Style="{StaticResource ButtonStyle}"
-                 Template="{StaticResource TemplateButton}" 
-                 Command="{Binding Open}" CommandParameter="Game"
-                 Content="Начать игру" Grid.Row="1"  Grid.Column="1" >
-            </Button>
-        
-        <Button  Grid.Row="2"  Grid.Column="1" 
-                 Style="{StaticResource ButtonStyle}"
-                 Template="{StaticResource TemplateButton}" 
-                 Command="{Binding Open}" CommandParameter="Score"
-                 Content="Рекорды">
-            </Button>
-        <Button Grid.Row="3"  Grid.Column="1"
-                Style="{StaticResource ButtonStyle}" 
-                Template="{StaticResource TemplateButton}"
-                Command="{Binding Open}" CommandParameter="Setting"
-                Content="Настройки">
-            </Button>
-
-        <Button Grid.Row="4"  Grid.Column="1" 
-                Style="{StaticResource ButtonStyle}" 
-                Template="{StaticResource TemplateButton}" 
-                Command="{Binding Open}" CommandParameter="Exit"
-                Content="Выход"  >
-        </Button>
-       
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

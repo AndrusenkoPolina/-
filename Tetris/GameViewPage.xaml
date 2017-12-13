@@ -1,0 +1,46 @@
+﻿<Page x:Class="Tetris.GameViewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tetris"
+      mc:Ignorable="d" 
+       Title="Игра">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Style.xaml">
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*">
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1"  >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1" Style="{StaticResource StyleTextblockGradientChild}"/>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Style="{StaticResource StyleTextBlockChild}" Text="Счёт"/>
+                <TextBlock Grid.Row="1" Style="{StaticResource StyleTextBlockChild}"  />
+                <TextBlock Grid.Row="2" Style="{StaticResource StyleTextBlockChild}" Text="Фигура"/>
+                <TextBlock Grid.Row="3" Style="{StaticResource StyleTextBlockChild}" />
+
+
+            </Grid>
+        </Grid>
+    </Grid>
+    </Page>

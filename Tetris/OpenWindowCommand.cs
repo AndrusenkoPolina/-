@@ -29,7 +29,7 @@ namespace Tetris
             switch (vmOpen)
             {
                 case "Game":
-                    vgame.Show();
+               
                     break;
                 case "Score" :
                     ViewScore vscore = new ViewScore();

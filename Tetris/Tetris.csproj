@@ -55,24 +55,54 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameOverViewPage.xaml.cs">
+      <DependentUpon>GameOverViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameViewPage.xaml.cs">
+      <DependentUpon>GameViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPageView.xaml.cs">
+      <DependentUpon>MainPageView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="OpenWindowCommand.cs" />
-    <Compile Include="GameOver.xaml.cs">
+    <Compile Include="ViewWindow\GameOver.xaml.cs">
       <DependentUpon>GameOver.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PauseViewPage.xaml.cs">
+      <DependentUpon>PauseViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreViewPage.xaml.cs">
+      <DependentUpon>ScoreViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingViewPage.xaml.cs">
+      <DependentUpon>SettingViewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModelMainWindow.cs" />
-    <Compile Include="ViewPause.xaml.cs">
+    <Compile Include="ViewWindow\ViewPause.xaml.cs">
       <DependentUpon>ViewPause.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewScore.xaml.cs">
+    <Compile Include="ViewWindow\ViewScore.xaml.cs">
       <DependentUpon>ViewScore.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewGame.xaml.cs">
+    <Compile Include="ViewWindow\ViewGame.xaml.cs">
       <DependentUpon>ViewGame.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewSetting.xaml.cs">
+    <Compile Include="ViewWindow\ViewSetting.xaml.cs">
       <DependentUpon>ViewSetting.xaml</DependentUpon>
     </Compile>
-    <Page Include="GameOver.xaml">
+    <Page Include="ViewWindow\GameOver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameOverViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPageView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,11 +118,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ViewPause.xaml">
+    <Page Include="PauseViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewScore.xaml">
+    <Page Include="ScoreViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindow\ViewPause.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindow\ViewScore.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -100,11 +142,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewGame.xaml">
+    <Page Include="ViewWindow\ViewGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewSetting.xaml">
+    <Page Include="ViewWindow\ViewSetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,9 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Mainpicture.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Screen.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

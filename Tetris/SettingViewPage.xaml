@@ -1,20 +1,21 @@
-﻿<Window x:Class="Tetris.ViewSetting"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Tetris"
-        mc:Ignorable="d"
-        Title="Настройки" Height="600" Width="400">
-    <Window.Resources>
+﻿<Page x:Class="Tetris.SettingViewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tetris"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="500"
+         Title="Настройки">
+    <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Style.xaml">
                 </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>
-    <Grid Background="{StaticResource MainPictureBrush}">
+    </Page.Resources>
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -50,7 +51,7 @@
 
             <TextBlock Grid.Row="0" Style="{StaticResource StyleTextblockGradientChild}" Text="Управление" FontSize="20" >
             </TextBlock>
-            
+
             <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -81,8 +82,8 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="1" Grid.Row="2" Style="{StaticResource StyleButtonChild}" Template="{StaticResource TemplateButton}" Content="Назад">
+            <Button Grid.Column="1" Grid.Row="2" Style="{StaticResource StyleButtonChild}" Template="{StaticResource TemplateButton}" Content="Назад" Click="Button_Click">
             </Button>
         </Grid>
     </Grid>
-</Window>
+    </Page>

@@ -16,19 +16,19 @@ using System.Windows.Shapes;
 namespace Tetris
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для SettingViewPage.xaml
     /// </summary>
-    public partial class MainView : Window
+    public partial class SettingViewPage : Page
     {
-        public MainView()
+        public SettingViewPage()
         {
             InitializeComponent();
-            MainPageView mpv = new MainPageView();
-            Main.NavigationService.Navigate(mpv);
-
         }
 
-       
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainPageView mvp = new MainPageView();
+            this.NavigationService.Navigate(mvp);
+        }
     }
 }

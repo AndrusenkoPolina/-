@@ -14,12 +14,11 @@ namespace Tetris
         public event PropertyChangedEventHandler PropertyChanged;
 
 
-        public ViewGame vgame { get; set; }
+
         public ICommand Open { get; set; }
 
         public ViewModelMainWindow()
         {
-            vgame = new ViewGame();
             Open = new OpenWindowCommand();
         }
 

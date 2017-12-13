@@ -11,20 +11,20 @@
     </Style>
 
     <Style x:Key="StyleButtonChild" TargetType="Button" BasedOn="{StaticResource ButtonStyle}">
-        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style x:Key="StyleTextBlockMain" TargetType="TextBlock" >
         <Setter Property="Background" Value="LightBlue"/>
         <Setter Property="Opacity" Value="0.8"/>
         <Setter Property="Foreground" Value="Black"/>
-        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="40"/>
         <Setter Property="FontFamily" Value="/Tetris;component/#Bebas Neue Bold"/>
         <Setter Property="TextAlignment" Value="Center"/>
     </Style>
 
     <Style x:Key="StyleTextBlockChild" TargetType="TextBlock" BasedOn="{StaticResource StyleTextBlockMain}">
-        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontSize" Value="30"/>
     </Style>
 
     <Style x:Key="StyleTextblockGradientChild" TargetType="TextBlock" BasedOn="{StaticResource StyleTextBlockChild }">
@@ -42,10 +42,10 @@
     <Style x:Key="StyleLabel" TargetType="Label">
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="FontSize" Value="20"/>
         <Setter Property="FontFamily" Value="/Tetris;component/#Bebas Neue Bold"/>
         <Setter Property="Background" Value="LightBlue"/>
-        <Setter Property="Width" Value="100"/>
+        <!--<Setter Property="Width" Value="100"/>-->
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="BorderBrush" Value="#4E504E"/>
         <Setter Property="Foreground" Value="#4E504E"/>
@@ -79,8 +79,4 @@
     <ImageBrush x:Key="MainPictureBrush" ImageSource="Mainpicture.png" Stretch="Uniform">
     </ImageBrush>
 
-    <Image x:Key="Screen" Source="Screen.jpg">
-    </Image>
-    <ImageBrush x:Key="ScreenBrush" ImageSource="Screen.jpg" Stretch="Uniform" >
-    </ImageBrush>
 </ResourceDictionary>
